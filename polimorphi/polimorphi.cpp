@@ -25,3 +25,16 @@ public:
     }
 };
 
+int main()
+{
+    seseorang* obyek;//membuat pointer seseorang* obyek yang akan digunakan untuk merujuk pada objek kelas turunan
+    joko a; //membuat objek joko dengan nama a dan objek lia dengan nama b.
+    lia b;
+
+    obyek = &a; 
+    obyek->pesan(); //obyek->pesan(); memanggil metode pesan() dari objek yang ditunjuk oleh obyek.
+    obyek = &b;
+    obyek->pesan();
+    //a.seseorang::pesan();
+    return 0;
+}
